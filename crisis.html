@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crisis Center - SafeNet</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/crisis.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body class="crisis-mode">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-shield-check me-2"></i>
+                <span class="brand-text">SafeNet</span>
+                <span class="badge bg-danger ms-2">Crisis Center</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="bi bi-house"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="junior.html"><i class="bi bi-emoji-smile"></i> Junior</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="adult.html"><i class="bi bi-person-gear"></i> Adult</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html"><i class="bi bi-globe"></i> Data</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="bi bi-ambulance"></i> Crisis Help</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Emergency Hero Section -->
+    <section class="emergency-hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-80">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="emergency-alert">
+                        <i class="bi bi-exclamation-triangle"></i>
+                        <h1 class="emergency-title">
+                            <span class="text-danger">Emergency</span> Digital Safety Help
+                        </h1>
+                        <p class="emergency-subtitle">
+                            Immediate assistance for digital emergencies. Follow step-by-step guides, 
+                            contact authorities, and get the help you need right now.
+                        </p>
+                        
+                        <div class="emergency-timer mt-4">
+                            <div class="timer-card">
+                                <i class="bi bi-clock"></i>
+                                <div>
+                                    <h4>Quick Response</h4>
+                                    <p>Get help in under 5 minutes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Type Selector -->
+    <section class="problem-selector py-5">
+        <div class="container">
+            <div class="selector-card p-4">
+                <h3 class="text-center mb-4">
+                    <i class="bi bi-search"></i> What's Your Emergency?
+                </h3>
+                <p class="text-center mb-4">Select your situation to get customized help</p>
+                
+                <div class="row">
+                    <!-- Emergency Type 1 -->
+                    <div class="col-md-3 col-6 mb-3">
+                        <div class="problem-card" data-problem="hacked">
+                            <div class="problem-icon">
+                                <i class="bi bi-person-badge"></i>
+                            </div>
+                            <h5>Account Hacked</h5>
+                            <p>Someone accessed your account</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Emergency Type 2 -->
+                    <div class="col-md-3 col-6 mb-3">
+                        <div class="problem-card" data-problem="bullying">
+                            <div class="problem-icon">
+                                <i class="bi bi-heartbreak"></i>
+                            </div>
+                            <h5>Cyberbullying</h5>
+                            <p>Being harassed online</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Emergency Type 3 -->
+                    <div class="col-md-3 col-6 mb-3">
+                        <div class="problem-card" data-problem="scam">
+                            <div class="problem-icon">
+                                <i class="bi bi-cash-coin"></i>
+                            </div>
+                            <h5>Financial Scam</h5>
+                            <p>Lost money online</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Emergency Type 4 -->
+                    <div class="col-md-3 col-6 mb-3">
+                        <div class="problem-card" data-problem="privacy">
+                            <div class="problem-icon">
+                                <i class="bi bi-eye-slash"></i>
+                            </div>
+                            <h5>Privacy Breach</h5>
+                            <p>Personal info exposed</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mt-2">
+                    <!-- Emergency Type 5 -->
+                    <div class="col-md-3 col-6 mb-3">
+                        <div class="problem-card" data-problem="child">
+                            <div class="problem-icon">
+                                <i class="bi bi-emoji-frown"></i>
+                            </div>
+                            <h5>Child in Danger</h5>
+                            <p>Your child needs help</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Emergency Type 6 -->
+                    <div class="col-md-3 col-6 mb-3">
+                        <div class="problem-card" data-problem="stalking">
+                            <div class="problem-icon">
+                                <i class="bi bi-binoculars"></i>
+                            </div>
+                            <h5>Online Stalking</h5>
+                            <p>Being followed online</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Emergency Type 7 -->
+                    <div class="col-md-3 col-6 mb-3">
+                        <div class="problem-card" data-problem="content">
+                            <div class="problem-icon">
+                                <i class="bi bi-exclamation-octagon"></i>
+                            </div>
+                            <h5>Harmful Content</h5>
+                            <p>Saw disturbing material</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Emergency Type 8 -->
+                    <div class="col-md-3 col-6 mb-3">
+                        <div class="problem-card" data-problem="other">
+                            <div class="problem-icon">
+                                <i class="bi bi-question-circle"></i>
+                            </div>
+                            <h5>Other Problem</h5>
+                            <p>Something else</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Step-by-Step Guide (Dynamic Content) -->
+    <section class="solution-guide py-5" id="solutionGuide" style="display: none;">
+        <div class="container">
+            <div class="guide-card p-4">
+                <div class="guide-header">
+                    <h3 id="problemTitle">Problem Title</h3>
+                    <button class="btn btn-sm btn-outline-danger" id="resetGuide">
+                        <i class="bi bi-arrow-clockwise"></i> Choose Different Problem
+                    </button>
+                </div>
+                
+                <div class="guide-progress mt-4">
+                    <div class="progress-steps">
+                        <div class="step" data-step="1">Step 1</div>
+                        <div class="step" data-step="2">Step 2</div>
+                        <div class="step" data-step="3">Step 3</div>
+                        <div class="step" data-step="4">Step 4</div>
+                        <div class="step" data-step="5">Get Help</div>
+                    </div>
+                </div>
+                
+                <!-- Step Content will be loaded here -->
+                <div class="step-content mt-4" id="stepContent">
+                    <!-- Content loaded by JavaScript -->
+                </div>
+                
+                <div class="step-navigation mt-4">
+                    <button class="btn btn-secondary" id="prevStep" disabled>
+                        <i class="bi bi-arrow-left"></i> Previous
+                    </button>
+                    <button class="btn btn-primary" id="nextStep">
+                        Next <i class="bi bi-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contacts -->
+    <section class="emergency-contacts py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">
+                <i class="bi bi-telephone"></i> Immediate Contacts
+            </h2>
+            
+            <div class="row">
+                <!-- National Contacts -->
+                <div class="col-lg-6 mb-4">
+                    <div class="contacts-card">
+                        <div class="contacts-header">
+                            <i class="bi bi-flag"></i>
+                            <h4>National Emergency Numbers</h4>
+                        </div>
+                        <div class="contacts-list">
+                            <div class="contact-item">
+                                <div class="contact-info">
+                                    <h6>General Emergency</h6>
+                                    <p>Police, Ambulance, Fire</p>
+                                </div>
+                                <div class="contact-number">
+                                    <span class="badge bg-danger">112</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-info">
+                                    <h6>Cybercrime Police</h6>
+                                    <p>Online crime reporting</p>
+                                </div>
+                                <div class="contact-number">
+                                    <span class="badge bg-danger">108</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-info">
+                                    <h6>Child Protection</h6>
+                                    <p>Under 18 emergency help</p>
+                                </div>
+                                <div class="contact-number">
+                                    <span class="badge bg-danger">16000</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-info">
+                                    <h6>Mental Health Support</h6>
+                                    <p>24/7 psychological help</p>
+                                </div>
+                                <div class="contact-number">
+                                    <span class="badge bg-danger">0800 111 1616</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- International Contacts -->
+                <div class="col-lg-6 mb-4">
+                    <div class="contacts-card">
+                        <div class="contacts-header">
+                            <i class="bi bi-globe"></i>
+                            <h4>International Resources</h4>
+                        </div>
+                        <div class="contacts-list">
+                            <div class="contact-item">
+                                <div class="contact-info">
+                                    <h6>Interpol Cybercrime</h6>
+                                    <p>International cybercrime</p>
+                                </div>
+                                <a href="https://www.interpol.int/Crimes/Cybercrime" 
+                                   target="_blank" class="contact-link">
+                                    Visit Website
+                                </a>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-info">
+                                    <h6>Child Helpline International</h6>
+                                    <p>Global child protection</p>
+                                </div>
+                                <a href="https://www.childhelplineinternational.org" 
+                                   target="_blank" class="contact-link">
+                                    Visit Website
+                                </a>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-info">
+                                    <h6>UNICEF Protection</h6>
+                                    <p>Children's rights & safety</p>
+                                </div>
+                                <a href="https://www.unicef.org/protection" 
+                                   target="_blank" class="contact-link">
+                                    Visit Website
+                                </a>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-info">
+                                    <h6>World Bank Data</h6>
+                                    <p>Digital safety statistics</p>
+                                </div>
+                                <a href="https://datacatalog.worldbank.org" 
+                                   target="_blank" class="contact-link">
+                                    Visit Website
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Action Tools -->
+    <section class="quick-action-tools py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">
+                <i class="bi bi-tools"></i> Quick Action Tools
+            </h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="action-card text-center p-4">
+                        <i class="bi bi-file-earmark-text display-4 text-primary"></i>
+                        <h4 class="mt-3">Generate Report</h4>
+                        <p>Create a formal incident report for authorities</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reportModal">
+                            Create Report
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="action-card text-center p-4">
+                        <i class="bi bi-shield-check display-4 text-success"></i>
+                        <h4 class="mt-3">Safety Check</h4>
+                        <p>Run a quick security assessment</p>
+                        <button class="btn btn-success" onclick="runSafetyCheck()">
+                            Start Check
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="action-card text-center p-4">
+                        <i class="bi bi-download display-4 text-warning"></i>
+                        <h4 class="mt-3">Download Resources</h4>
+                        <p>Get safety guides and checklists</p>
+                        <a href="#" class="btn btn-warning">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aftercare Section -->
+    <section class="aftercare-section py-5">
+        <div class="container">
+            <div class="aftercare-card p-4">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h3><i class="bi bi-heart-pulse"></i> Aftercare Support</h3>
+                        <p>Recovery doesn't end with the emergency. Here's how to heal and prevent future issues.</p>
+                        
+                        <div class="support-options mt-3">
+                            <div class="support-item">
+                                <i class="bi bi-chat-dots"></i>
+                                <span>Counseling Services</span>
+                            </div>
+                            <div class="support-item">
+                                <i class="bi bi-people"></i>
+                                <span>Support Groups</span>
+                            </div>
+                            <div class="support-item">
+                                <i class="bi bi-book"></i>
+                                <span>Educational Resources</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-md-end text-center mt-3 mt-md-0">
+                        <a href="resources.html" class="btn btn-light">
+                            <i class="bi bi-download"></i> Download Recovery Guide
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="crisis-footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h4><i class="bi bi-ambulance"></i> SafeNet Crisis Center</h4>
+                    <p>24/7 digital safety emergency assistance. You're not alone.</p>
+                    <p class="small">Remember: In immediate physical danger, call local police (112) first.</p>
+                </div>
+                <div class="col-md-4 text-md-end text-center mt-3 mt-md-0">
+                    <a href="index.html" class="btn btn-outline-light me-2">
+                        <i class="bi bi-arrow-left"></i> Back to Home
+                    </a>
+                    <button class="btn btn-danger" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                        <i class="bi bi-arrow-up"></i> Emergency Top
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal fade" id="reportModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="bi bi-file-earmark-text"></i> Generate Incident Report</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="reportForm">
+                        <div class="mb-3">
+                            <label class="form-label">Incident Type</label>
+                            <select class="form-select" required>
+                                <option value="">Select type</option>
+                                <option value="hacking">Account Hacking</option>
+                                <option value="bullying">Cyberbullying</option>
+                                <option value="scam">Financial Scam</option>
+                                <option value="stalking">Online Stalking</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Date of Incident</label>
+                            <input type="date" class="form-control" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Description</label>
+                            <textarea class="form-control" rows="4" placeholder="Describe what happened..." required></textarea>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Platform/Website</label>
+                            <input type="text" class="form-control" placeholder="Facebook, WhatsApp, etc.">
+                        </div>
+                        
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="bi bi-download"></i> Generate & Download Report
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="./js/crisis.js"></script>
+</body>
+</html>

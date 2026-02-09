@@ -1,0 +1,361 @@
+/* Crisis Center Theme */
+.crisis-mode {
+    background: linear-gradient(135deg, #0c0032 0%, #190061 100%);
+    color: #f8f9fa;
+    min-height: 100vh;
+}
+
+/* Emergency Hero */
+.emergency-hero {
+    padding-top: 100px;
+    background: linear-gradient(rgba(220, 53, 69, 0.1), rgba(220, 53, 69, 0.05)),
+                url('https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg');
+    background-size: cover;
+    
+    position: relative;
+}
+
+.emergency-alert {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 0 50px rgba(220, 53, 69, 0.3);
+    margin-bottom: 25px;
+}
+
+.emergency-alert i {
+    font-size: 4rem;
+    color: #dc3545;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.emergency-title {
+    font-family: 'Fredoka One', cursive;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.emergency-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.timer-card {
+    color: #dc3545;
+    border-radius: 15px;
+    padding: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.timer-card i {
+    font-size: 2rem;
+    color: #ff6b6b;
+    margin: 0;
+}
+
+.timer-card h4 {
+    margin: 0;
+    color: white;
+}
+
+.timer-card p {
+    margin: 0;
+    opacity: 0.8;
+}
+
+/* Problem Selector */
+.problem-selector {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.selector-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.problem-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    height: 100%;
+}
+
+.problem-card:hover {
+    background: rgba(220, 53, 69, 0.2);
+    border-color: #dc3545;
+    transform: translateY(-5px);
+}
+
+.problem-card.active {
+    background: rgba(220, 53, 69, 0.3);
+    border-color: #dc3545;
+    box-shadow: 0 10px 20px rgba(220, 53, 69, 0.3);
+}
+
+.problem-icon {
+    font-size: 2.5rem;
+    color: #ff6b6b;
+    margin-bottom: 15px;
+}
+
+.problem-card h5 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.problem-card p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Solution Guide */
+.solution-guide {
+    background: white;
+    color: #333;
+}
+
+.guide-card {
+    background: #f8f9fa;
+    border-radius: 20px;
+    border: 3px solid #dc3545;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.guide-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.guide-header h3 {
+    color: #0c2461;
+    margin: 0;
+}
+
+.progress-steps {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.progress-steps::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 10%;
+    right: 10%;
+    height: 3px;
+    background: #dee2e6;
+    z-index: 1;
+}
+
+.step {
+    width: 50px;
+    height: 50px;
+    background: #dee2e6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #6c757d;
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s;
+}
+
+.step.active {
+    background: #dc3545;
+    color: white;
+    transform: scale(1.1);
+}
+
+.step-content {
+    min-height: 300px;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    border: 2px solid #e9ecef;
+}
+
+.step-navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Emergency Contacts */
+.emergency-contacts {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.contacts-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 25px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    height: 100%;
+}
+
+.contacts-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.contacts-header i {
+    font-size: 2rem;
+    color: #ff6b6b;
+}
+
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border-left: 4px solid #dc3545;
+}
+
+.contact-info h6 {
+    color: white;
+    margin: 0;
+}
+
+.contact-info p {
+    color: rgba(255, 255, 255, 0.7);
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+}
+
+.contact-number .badge {
+    font-size: 1.1rem;
+    padding: 8px 15px;
+}
+
+.contact-link {
+    color: #4cd137;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: 2px solid #4cd137;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.contact-link:hover {
+    background: #4cd137;
+    color: white;
+}
+
+/* Aftercare Section */
+.aftercare-section {
+    background:  rgba(0, 0, 0, 0.4);;
+}
+
+.aftercare-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    color: #333;
+    border: 3px solid #4cd137;
+}
+
+.support-options {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.support-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 15px;
+    min-width: 120px;
+    transition: all 0.3s;
+}
+
+.support-item:hover {
+    background: #e8f5e9;
+    transform: translateY(-5px);
+}
+
+.support-item i {
+    font-size: 2rem;
+    color: #4cd137;
+    margin-bottom: 10px;
+}
+
+.support-item span {
+    font-weight: bold;
+    color: #2d3436;
+}
+
+/* Footer */
+.crisis-footer {
+    background: #0a0019;
+    border-top: 5px solid #dc3545;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .emergency-title {
+        font-size: 2.5rem;
+    }
+    
+    .emergency-alert {
+        padding: 25px;
+        margin: 0 15px;
+    }
+    
+    .progress-steps::before {
+        display: none;
+    }
+    
+    .progress-steps {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .support-options {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .aftercare-card .row {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .aftercare-card .text-end {
+        text-align: center !important;
+    }
+}

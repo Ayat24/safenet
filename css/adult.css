@@ -1,0 +1,416 @@
+
+        /* Adult body*/
+        .adult-mode {
+            color: #f8f9fa;
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            background: #f5f7fa;
+        }
+
+        /* Nav */
+        .navbar {
+            background: rgba(12, 36, 97, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+        }
+
+        .navbar-brand {
+            font-family: 'Fredoka One', cursive;
+            font-size: 1.8rem;
+        }
+
+        .brand-text {
+            color: #4cd137;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            margin: 0 10px;
+            transition: color 0.3s;
+            color: white !important;
+        }
+
+        .nav-link:hover {
+            color: #4cd137 !important;
+        }
+
+        .nav-link.active {
+            color: #4cd137 !important;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background-image: url(../Assets/images/padlock-cyber-security-concept-with-glowing-low-poly-lock-dark-blue-background-wireframe-low-poly-design-abstract-futuristic-vector-illustration_468958-489.avif);
+            background-size: cover; 
+            height: 80vh;
+            background-position: center;
+            color: white;
+            padding: 80px 0 60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(12, 37, 87, 0.6);
+        }
+
+        .hero-title {
+            font-weight: 800;
+            position: relative;
+            font-size: 3.2rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            color: #b4d7fa;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+            max-width: 600px;
+            color: white;
+            position: relative;
+        }
+
+        .hero-highlight {
+            color: #f9fafc;
+            position: relative;
+            display: inline-block;
+        }
+
+        .hero-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 40px;
+            position: relative;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s;
+            min-width: 200px;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .stat-icon {
+            font-size: 2.5rem;
+            color: #4cd137;
+            margin-bottom: 15px;
+        }
+
+        .stat-number {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Teen Safety Section */
+        .teen-safety {
+            background-color: #f9fafc;
+            color: #0a1930;
+            padding: 60px 0;
+        }
+
+        .teen-safety h2 {
+            font-size: 35px;
+            font-weight: 700;
+        }
+
+        .teen-safety p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .cards-teen {
+            margin: 0px 15px;
+        }
+
+        .safety-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 25px;
+            height: 95%;
+            text-align: left;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .safety-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .safety-card h5 {
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #0c2461;
+        }
+
+        .safety-card ul {
+            padding-left: 18px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .safety-card ul li {
+            margin-bottom: 8px;
+        }
+
+        .icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .blue { background: #6aa9ff; }
+        .purple { background: #8b7cf6; }
+        .pink { background: #ff7eb3; }
+        .red { background: #ff6b6b; }
+        .orange { background: #ffa94d; }
+        .green { background: #4cd4a0; }
+
+        .carousel-control-prev, 
+        .carousel-control-next {
+            width: 50px;
+            height: 50px;
+            background-color: #57a6df;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.8;
+        }
+
+        /* Tools Section */
+        .tools-section {
+            padding: 60px 0;
+            background: white;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .section-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .section-title {
+            font-weight: 700;
+            font-size: 2rem;
+            color: #0c2461;
+            margin: 0;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .tool-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+            height: 100%;
+            transition: transform 0.3s;
+            color: #0a1930;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .tool-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .tool-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: #3498db;
+            font-size: 1.5rem;
+        }
+
+        .tool-title {
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin: 0;
+            color: #0c2461;
+        }
+
+        .tool-description {
+            color: #64748b;
+            margin-bottom: 20px;
+        }
+
+        .password-strength {
+            height: 8px;
+            background: #e2e8f0;
+            border-radius: 4px;
+            margin: 15px 0;
+            overflow: hidden;
+        }
+
+        .strength-fill {
+            height: 100%;
+            width: 0%;
+            border-radius: 4px;
+            transition: width 0.5s, background 0.5s;
+        }
+
+        .btn-primary-custom {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            border: none;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn-primary-custom:hover {
+            background: linear-gradient(135deg, #2980b9, #1c6ea4);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
+            color: white;
+        }
+
+        /* Data Dashboard */
+        .data-dashboard {
+            background: white;
+            color: #333;
+            padding: 60px 0;
+        }
+
+        .data-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            border: 2px solid #e9ecef;
+        }
+
+        .data-point {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .data-point h3 {
+            font-size: 2.5rem;
+            color: #0c2461;
+            margin-bottom: 10px;
+        }
+
+        .data-point p {
+            color: #666;
+            margin: 0;
+        }
+
+        /* Family Section */
+        .family-section {
+            background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%);
+            padding: 60px 0;
+        }
+
+        .family-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            color: #333;
+        }
+
+        .family-tools {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .family-tool {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s;
+            min-width: 120px;
+            text-align: center;
+        }
+
+        .family-tool:hover {
+            background: #0c2461;
+            color: white;
+            transform: translateY(-5px);
+        }
+
+        .family-tool i {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .modal-body{
+            color: #0a1930;
+        }
+.modal-header h5{
+    color: #0a1930;
+}
+        /* Footer */
+        .adult-footer {
+            background: #0a1930;
+            color: white;
+            padding: 30px 0;
+            border-top: 5px solid #4cd137;
+        }
+
+       

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adult Mode - SafeNet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="./css/adult.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fredoka+One&display=swap" rel="stylesheet">
+    
+    
+</head>
+<body class="adult-mode">
+
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-shield-check me-2"></i>
+                <span class="brand-text">SafeNet</span>
+                <span class="badge bg-primary ms-2">Adult</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="bi bi-house"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="junior.html"><i class="bi bi-emoji-smile"></i> Junior Mode</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="bi bi-person-gear"></i> Adult Mode</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary ms-2" href="#tools">
+                            <i class="bi bi-tools"></i> Security Tools
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="hero-title">
+                        Advanced <span class="hero-highlight">Digital Protection</span> for Professionals
+                    </h1>
+                    <p class="hero-subtitle">
+                        Master cybersecurity with interactive simulations, practical tools, 
+                        and data-driven insights to secure your digital life.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="bi bi-exclamation-triangle"></i>
+                            </div>
+                            <div class="stat-number">83%</div>
+                            <div class="stat-label">Organizations hit by phishing</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="bi bi-cash-stack"></i>
+                            </div>
+                            <div class="stat-number">$6T</div>
+                            <div class="stat-label">Cybercrime cost by 2025</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+                            <div class="stat-number">65%</div>
+                            <div class="stat-label">Attacks target human error</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teen Safety Section -->
+    <section class="teen-safety">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-2">What Every Teen Needs to Know Online</h2>
+            <p class="text-muted mb-4">
+                Learn how to stay safe, smart, and confident online
+            </p>
+
+            <div id="teenCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row g-4 justify-content-center cards-teen">
+                            <div class="col-md-4">
+                                <div class="safety-card">
+                                    <div class="icon blue">👁️</div>
+                                    <h5>Digital Reputation</h5>
+                                    <ul>
+                                        <li>Think before you post</li>
+                                        <li>What you share stays online</li>
+                                        <li>Delete old harmful content</li>
+                                        <li>Colleges & jobs check profiles</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="safety-card">
+                                    <div class="icon purple">🔒</div>
+                                    <h5>Privacy Protection</h5>
+                                    <ul>
+                                        <li>Use strong privacy settings</li>
+                                        <li>Avoid sharing personal info</li>
+                                        <li>Check app permissions</li>
+                                        <li>Disable location sharing</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="safety-card">
+                                    <div class="icon pink">❤️</div>
+                                    <h5>Online Relationships</h5>
+                                    <ul>
+                                        <li>Not everyone is who they claim</li>
+                                        <li>Never meet strangers alone</li>
+                                        <li>Protect private photos</li>
+                                        <li>Talk to a trusted adult</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row g-4 justify-content-center cards-teen">
+                            <div class="col-md-4">
+                                <div class="safety-card">
+                                    <div class="icon red">🚫</div>
+                                    <h5>Cyberbullying</h5>
+                                    <ul>
+                                        <li>Don't respond to bullies</li>
+                                        <li>Save evidence (screenshots)</li>
+                                        <li>Block & report users</li>
+                                        <li>Ask for help immediately</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="safety-card">
+                                    <div class="icon orange">⚠️</div>
+                                    <h5>Inappropriate Content</h5>
+                                    <ul>
+                                        <li>Avoid unsafe websites</li>
+                                        <li>Use parental controls</li>
+                                        <li>Report harmful content</li>
+                                        <li>Leave uncomfortable spaces</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="safety-card">
+                                    <div class="icon green">💬</div>
+                                    <h5>Social Media Safety</h5>
+                                    <ul>
+                                        <li>Accept requests carefully</li>
+                                        <li>Use private accounts</li>
+                                        <li>Enable 2FA security</li>
+                                        <li>Log out from shared devices</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#teenCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#teenCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="tools-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="section-header">
+                        <div class="section-icon">
+                            <i class="bi bi-tools"></i>
+                        </div>
+                        <h2 class="section-title">Security Assessment Tools</h2>
+                    </div>
+                    <p class="text-center text-muted">Practical tools to evaluate and improve your digital security</p>
+                </div>
+            </div>
+            
+            <div class="tools-grid">
+                <!-- Password Tool -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">
+                            <i class="bi bi-key"></i>
+                        </div>
+                        <h3 class="tool-title">Password Strength Analyzer</h3>
+                    </div>
+                    <p class="tool-description">Test your password strength and get personalized improvement suggestions.</p>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Enter Password to Analyze</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="passwordInput" placeholder="Your password">
+                            <button class="btn btn-outline-primary" type="button" id="togglePassword">
+                                <i class="bi bi-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary-custom w-100 mb-3" onclick="analyzePassword()">
+                        <i class="bi bi-shield-check me-2"></i> Analyze Password
+                    </button>
+                    
+                    <div id="passwordResults" class="d-none">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Password Strength:</span>
+                            <strong id="strengthText"></strong>
+                        </div>
+                        <div class="password-strength">
+                            <div id="strengthBar" class="strength-fill"></div>
+                        </div>
+                        <div id="passwordSuggestions" class="mt-3"></div>
+                    </div>
+                </div>
+                
+                <!-- Privacy Tool -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">
+                            <i class="bi bi-shield-lock"></i>
+                        </div>
+                        <h3 class="tool-title">Privacy Settings Guide</h3>
+                    </div>
+                    <p class="tool-description">Step-by-step guides to secure your social media and online accounts.</p>
+                    
+                    <select class="form-select mt-3" id="platformSelect">
+                        <option value="">Select Platform</option>
+                        <option value="facebook">Facebook</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="twitter">Twitter/X</option>
+                        <option value="google">Google Account</option>
+                    </select>
+                    
+                    <div class="privacy-guide mt-3 d-none">
+                        <h6>Key Privacy Settings:</h6>
+                        <ul class="privacy-steps mb-2"></ul>
+                        <p class="estimated-time small text-muted"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Dashboard -->
+    <section class="data-dashboard">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">
+                <i class="bi bi-graph-up"></i> Digital Safety Dashboard
+            </h2>
+            
+            <div class="row">
+
+                <div class="col-12">
+                    <div class="data-card">
+                        <h4><i class="bi bi-bank"></i> World Bank Data Insights</h4>
+                        <div class="row mt-3">
+                            <div class="col-md-4">
+                                <div class="data-point">
+                                    <h3>45%</h3>
+                                    <p>Increase in digital transactions in MENA region</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="data-point">
+                                    <h3>30%</h3>
+                                    <p>Of SMEs have cybersecurity measures</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="data-point">
+                                    <h3>$2.9B</h3>
+                                    <p>Lost to cybercrime in Africa (2022)</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center mt-4">
+                            <a href="#" class="btn btn-outline-primary">
+                                Explore Full Data Analysis <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Family Protection -->
+    <section class="family-section">
+        <div class="container">
+            <div class="family-card">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h3><i class="bi bi-people-fill"></i> Family Protection Toolkit</h3>
+                        <p>Resources to protect your entire family in the digital world.</p>
+                        
+                        <div class="family-tools">
+                            <a href="junior.html" class="family-tool">
+                                <i class="bi bi-emoji-smile"></i>
+                                <span>Kids Safety Games</span>
+                            </a>
+                            <a href="#" class="family-tool" data-bs-toggle="modal" data-bs-target="#parentalModal">
+                                <i class="bi bi-lock"></i>
+                                <span>Parental Control Guide</span>
+                            </a>
+                            <a href="#" class="family-tool" onclick="downloadFamilyKit()">
+                                <i class="bi bi-download"></i>
+                                <span>Safety Kit Download</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center text-md-end mt-3 mt-md-0">
+                        <button class="btn btn-primary btn-lg" onclick="downloadFamilyKit()">
+                            <i class="bi bi-download"></i> Download Family Safety Kit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="adult-footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h4><i class="bi bi-shield-check"></i> SafeNet Adult Mode</h4>
+                    <p>Empowering adults with practical digital safety tools and knowledge.</p>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <a href="index.html" class="btn btn-outline-light me-2">
+                        <i class="bi bi-arrow-left"></i> Home
+                    </a>
+                    <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#emergencyModal">
+                        <i class="bi bi-ambulance"></i> Emergency Help
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Parental Control Modal -->
+    <div class="modal fade" id="parentalModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="bi bi-lock me-2"></i> Parental Control Guide</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Step-by-Step Setup:</h6>
+                    <ol>
+                        <li><strong>Screen Time Management:</strong> Set daily limits for different apps</li>
+                        <li><strong>Content Filtering:</strong> Block inappropriate websites and content</li>
+                        <li><strong>Privacy Settings:</strong> Control location sharing and personal data</li>
+                        <li><strong>App Approvals:</strong> Require permission for new app downloads</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Emergency Modal -->
+    <div class="modal fade" id="emergencyModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title"><i class="bi bi-ambulance"></i> Emergency Help</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Immediate Steps:</h6>
+                    <ol>
+                        <li><strong>Stop:</strong> Disconnect from the internet if necessary</li>
+                        <li><strong>Secure:</strong> Change passwords immediately</li>
+                        <li><strong>Document:</strong> Save all evidence and screenshots</li>
+                        <li><strong>Report:</strong> Contact local authorities and cyber police</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/adult.js"></script>
+   
+</body>
+</html>

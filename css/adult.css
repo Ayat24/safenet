@@ -41,7 +41,7 @@
         /* Hero Section */
         .hero-section {
             background-image: url(../Assets/images/padlock-cyber-security-concept-with-glowing-low-poly-lock-dark-blue-background-wireframe-low-poly-design-abstract-futuristic-vector-illustration_468958-489.avif);
-            background-size: cover; 
+            background-size: 100% 115%; 
             height: 80vh;
             background-position: center;
             color: white;
@@ -413,4 +413,39 @@
             border-top: 5px solid #4cd137;
         }
 
-       
+          /* Responsive */
+        @media (max-width: 768px) {
+            .hero-section{
+                background-size: cover;
+            }
+            .adult-title {
+                font-size: 2.2rem;
+            }
+            
+            .hero-stats {
+                flex-direction: column;
+            }
+            
+            .stat-card {
+                min-width: 100%;
+            }
+            
+            .family-tools {
+                flex-direction: column;
+            }
+            
+            .choice-btn {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+            
+            .choice-btn small {
+                margin-left: 0;
+                margin-top: 5px;
+            }
+            
+            .tool-card {
+                margin-bottom: 20px;
+            }
+        }

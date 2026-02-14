@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Junior Mode - SafeNet</title>
+    <title>SafeNet - Learn. Decide. Protect.</title>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fredoka+One&family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/junior.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fredoka+One&display=swap" rel="stylesheet">
 </head>
-<body class="junior-mode">
+<body>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="#">
                 <i class="bi bi-shield-check me-2"></i>
                 <span class="brand-text">SafeNet</span>
-                <span class="badge bg-warning ms-2">Junior</span>
             </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -27,456 +28,231 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html"><i class="bi bi-house"></i> Home</a>
+                        <a class="nav-link active" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#"><i class="bi bi-emoji-smile"></i> Junior Mode</a>
+                        <a class="nav-link" href="#features">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="adult.html"><i class="bi bi-person-gear"></i> Adult Mode</a>
+                        <a class="nav-link" href="#modes">Modes</a>
+                    </li>
+                  
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-warning ms-2" href="#progress">
-                            <i class="bi bi-trophy"></i> My Progress
-                        </a>
+                        <a class="btn btn-outline-light ms-2" href="#crisis">Emergency Help</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Junior Hero Section -->
-    <section class="junior-hero">
+<!-- Hero Section -->
+<section class="hero-section">
+    
+    <div class="video-container">
+        <video autoplay muted loop playsinline class="background-video">
+            <source src="./Assets/images/google-loop.webm" type="video/mp4">
+           </video>
+           <!-- layer -->
+        <div class="video-overlay"></div>
+    </div>
+    
+    <!-- Hero Content -->
+    <div class="container">
+        <div class="row align-items-center min-vh-100">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="hero-title animate-title">
+                    <span class="title-line">Become a</span>
+                    <span class="title-line highlight">
+                        <span class="text-primary">Digital Safety</span>
+                        <span class="text-warning">Hero</span>
+                    </span>
+                </h1>
+                <p class="hero-subtitle mt-4 animate-subtitle">
+                    Interactive platform teaching children and adults how to navigate the digital world safely through games, stories, and real-world scenarios.
+                </p>
+                
+                <div class="hero-buttons mt-5 animate-buttons">
+                    <a href="#modes" class="btn btn-primary btn-lg cta-button me-3">
+                        <i class="bi bi-rocket-takeoff"></i>
+                        <span>Start Your Journey</span>
+                    </a>
+                    <a href="#video-demo" class="btn btn-outline-light btn-lg demo-button" data-bs-toggle="modal" data-bs-target="#demoModal">
+                        <i class="bi bi-play-circle"></i>
+                        <span>Watch Demo</span>
+                    </a>
+                </div>
+                
+               
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section py-5">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h1 class="junior-title">
-                        Welcome to <span class="text-warning">Digital Adventure!</span>
-                    </h1>
-                    <p class="junior-subtitle">
-                        Learn online safety through fun games and exciting challenges. 
-                        Earn badges and become a Digital Safety Hero!
-                    </p>
-                    
-                    <div class="kid-avatar">
-                        <div class="avatar-select">
-                            <h5>Choose Your Hero:</h5>
-                            <div class="avatars">
-                                <button class="avatar-btn" data-avatar="boy">
-                                    <i class="bi bi-person"></i> Boy
-                                </button>
-                                <button class="avatar-btn" data-avatar="girl">
-                                    <i class="bi bi-person"></i> Girl
-                                </button>
-                                <button class="avatar-btn active" data-avatar="robot">
-                                    <i class="bi bi-robot"></i> Robo
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-6 text-center">
-                    <div class="hero-character">
-                        <img src="./Assets/images/robo.png" 
-                             alt="Robo Character" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Lesson 1: Personal Information Safety -->
-    <div class="container">
-        <div class="chat-box">
-            <div class="chat-header">
-                <img src="./Assets/images/ai-technology-robot-cartoon-design.png" 
-                     alt="Robo Guide" class="chat-avatar">
-                <h4 class="mt-3">Lesson: <span class="text-primary">Keep Personal Information Private</span></h4>
-                <p class="text-muted">A conversation between Robo and Alex about online safety</p>
-            </div>
-
-            <div class="chat-messages">
-                <!-- Message 1 -->
-                <div class="message left">
-                    <img src="./Assets/images/ai-technology-robot-cartoon-design.png" class="avatar">
-                    <div class="bubble">
-                        <p><strong>Hi Alex! 👋</strong> Today, let's talk about something very important: keeping your personal information safe online.</p>
-                        <small class="message-time">Robo • Just now</small>
-                    </div>
-                </div>
-
-                <!-- Message 2 -->
-                <div class="message right">
-                    <div class="bubble">
-                        <p><strong>Okay Robo! 😊</strong> What kind of information should I keep private?</p>
-                        <small class="message-time">Alex • Just now</small>
-                    </div>
-                    <img src="./Assets/images/robo.png" class="avatar">
-                </div>
-
-                <!-- Message 3 -->
-                <div class="message left">
-                    <img src="./Assets/images/ai-technology-robot-cartoon-design.png" class="avatar">
-                    <div class="bubble">
-                        <p><strong>Great question! 🛡️</strong> Here's the golden rule: <span class="text-danger">Never share personal information online!</span></p>
-                        <small class="message-time">Robo • Just now</small>
-                    </div>
-                </div>
-
-                <!-- Message 4 -->
-                <div class="message left">
-                    <img src="./Assets/images/ai-technology-robot-cartoon-design.png" class="avatar">
-                    <div class="bubble">
-                        <p><strong>Remember these:</strong></p>
-                        <div class="safety-list">
-                            <div class="safety-item">
-                                <i class="bi bi-x-circle text-danger"></i>
-                                <span><strong>Full name</strong> - Your complete name is family-only information</span>
-                            </div>
-                            <div class="safety-item">
-                                <i class="bi bi-x-circle text-danger"></i>
-                                <span><strong>Home address</strong> - Your home location is private family data</span>
-                            </div>
-                            <div class="safety-item">
-                                <i class="bi bi-x-circle text-danger"></i>
-                                <span><strong>Phone number</strong> - Parents' phone numbers are family secrets</span>
-                            </div>
-                            <div class="safety-item">
-                                <i class="bi bi-x-circle text-danger"></i>
-                                <span><strong>School name</strong> - Your school and grade are personal details</span>
-                            </div>
-                        </div>
-                        <small class="message-time">Robo • Just now</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Quiz 1 -->
-    <div class="container">
-        <div class="chat-box">
-            <div class="text-center mb-4">
-                <h4><i class="bi bi-question-circle text-warning"></i> Quick Quiz Time! 🎮</h4>
-                <p>Let's test what you've learned:</p>
-            </div>
-            
-            <div class="quiz-content">
-                <p class="lead">Someone online asks for your school name. What should you do?</p>
-                
-                <div class="choices">
-                    <button class="choice-btn" data-choice="wrong">
-                        A) Tell them - it's just a school name
-                    </button>
-                    <button class="choice-btn" data-choice="right">
-                        B) Say "Sorry, that's private information"
-                    </button>
-                    <button class="choice-btn" data-choice="wrong">
-                        C) Ask for their school name first
-                    </button>
-                </div>
-                
-                <div class="feedback mt-4" style="display: none;">
-                    <div class="alert alert-success">
-                        <i class="bi bi-trophy"></i> <strong>Correct!</strong> Always keep school information private.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Lesson 2: Stranger Danger -->
-    <div class="container">
-        <div class="chat-box">
-            <div class="chat-header">
-                <img src="./Assets/images/ai-technology-robot-cartoon-design.png" 
-                     alt="Robo Guide" class="chat-avatar">
-                <h4 class="mt-3">Lesson: <span class="text-primary">Be Careful with Strangers Online</span></h4>
-                <p class="text-muted">A conversation about online stranger danger</p>
-            </div>
-
-            <div class="chat-messages">
-                <!-- Message 1 -->
-                <div class="message left">
-                    <img src="./Assets/images/ai-technology-robot-cartoon-design.png" class="avatar">
-                    <div class="bubble">
-                        <p><strong>Hi friend! 👋</strong> Today we're going to learn about a very important rule for staying safe online.</p>
-                        <small class="message-time">Robo • Just now</small>
-                    </div>
-                </div>
-
-                <!-- Message 2 -->
-                <div class="message right">
-                    <div class="bubble">
-                        <p><strong>What's that, Robo? 🤔</strong> I meet lots of nice people online!</p>
-                        <small class="message-time">Alex • Just now</small>
-                    </div>
-                    <img src="./Assets/images/boy.png" class="avatar">
-                </div>
-
-                <!-- Message 3 -->
-                <div class="message left">
-                    <img src="./Assets/images/ai-technology-robot-cartoon-design.png" class="avatar">
-                    <div class="bubble">
-                        <p><strong>That's great! 😊</strong> But here's the golden rule: <span class="text-danger">Be careful with strangers online!</span></p>
-                        <div class="mt-2 p-3 bg-warning bg-opacity-25 rounded">
-                            <i class="bi bi-exclamation-triangle text-warning"></i>
-                            <span class="ms-2">Don't accept friend requests from people you don't know in real life</span>
-                        </div>
-                        <small class="message-time">Robo • Just now</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-<!-- Quiz 2 -->
-    <div class="container">
-        <div class="chat-box">
-            <div class="text-center mb-4">
-                <h4><i class="bi bi-person-plus text-warning"></i> New Friend Request </h4>
-                <p>Let's test what you've learned:</p>
-            </div>
-            
-            <div class="quiz-content">
-                <p class="lead p-3 my-3 bg-light rounded"> "Hi! I'm Sarah, 10 years old. I love the same games as you! Let's be friends!"
-                    <strong>Profile:</strong> No profile picture, 0 mutual friends, new account
-               </p>
-                
-                <div class="choices">
-
-                    <button class="choice-btn" data-choice="right">
-                        <i class="bi bi-shield-check"></i> Ask parents first - I don't know her
-                   
-                    </button>
-                    <button class="choice-btn" data-choice="wrong">
-                        <i class="bi bi-check-circle"></i> Accept immediately - she seems nice!
-                    </button>
-                    
-                    <button class="choice-btn" data-choice="wrong">
-                    <i class="bi bi-chat"></i> Message her first to learn more
-                    
-                    </button>
-                </div>
-                
-                <div class="feedback mt-4" style="display: none;">
-                    <div class="alert alert-success">
-                        <i class="bi bi-trophy"></i> <strong>Correct!</strong> Always Be Careful with Strangers Online.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Lesson 3: Think Before You Click -->
-    <div class="container">
-        <div class="chat-box">
-            <div class="chat-header">
-                <img src="./Assets/images/ai-technology-robot-cartoon-design.png" class="chat-avatar">
-                <h4 class="mt-3">Lesson: <span class="text-primary">Think Before You Click!</span></h4>
-            </div>
-
-            <div class="chat-messages">
-                <!-- Message 1 -->
-                <div class="message left">
-                    <img src="./Assets/images/ai-technology-robot-cartoon-design.png" class="avatar">
-                    <div class="bubble">
-                        <p><strong>Hi friend! 👋</strong> Let's learn an important online safety rule.</p>
-                        <small class="message-time">Robo • Now</small>
-                    </div>
-                </div>
-
-                <!-- Message 2 -->
-                <div class="message right">
-                    <div class="bubble">
-                        <p><strong>What rule? 🤔</strong></p>
-                        <small class="message-time">Alex • Now</small>
-                    </div>
-                    <img src="./Assets/images/girl.png" class="avatar">
-                </div>
-
-                <!-- Message 3 -->
-                <div class="message left">
-                    <img src="./Assets/images/ai-technology-robot-cartoon-design.png" class="avatar">
-                    <div class="bubble">
-                        <p><strong>Think before you click! 🧠</strong></p>
-                        <p>Don't click on links or download files without your parents' permission.</p>
-                        <small class="message-time">Robo • Now</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-<!-- Quiz 3-->
-    <div class="container">
-        <div class="chat-box">
-            <div class="text-center mb-4">
-                 <h4><i class="bi bi-question-circle text-warning"></i> Quick Quiz Time! 🎮</h4>
-                <p>Let's test what you've learned:</p>
-           </div>
-            
-            <div class="quiz-content">
-                 <h5>Look at this message. Is it Safe or Dangerous?</h5>
-                 <p>   From: GameMaster123</p>
-<p>
-Message: "Congratulations! You won an iPhone! Click here to claim: bit.ly/free-iphone"</p>
-                
-                <div class="choices">
-
-                    <button class="choice-btn" data-choice="right">
-                        Dangerous
-                   
-                    </button>
-                    <button class="choice-btn" data-choice="wrong">
-                        Safe
-                    </button>
-                    
-                   
-                </div>
-                
-                <div class="feedback mt-4" style="display: none;">
-                    <div class="alert alert-success">
-                        <i class="bi bi-trophy"></i> <strong>Correct!</strong> Don't click on links.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Help Section -->
-    <section class="help-section py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <span class="help-badge">
-                    <i class="bi bi-telephone"></i> Get Help
-                </span>
-                <h2 class="mt-3">What to Do If You Have a Problem Online</h2>
-            </div>
-
-            <div class="row g-4">
-                <!-- Card 1 -->
-                <div class="col-md-4">
-                    <div class="help-card">
-                        <h5><i class="bi bi-camera text-danger me-2"></i> How to Save Evidence</h5>
-                        <ul class="mt-3">
-                            <li>Don't delete abusive messages</li>
-                            <li>Take screenshots of conversations</li>
-                            <li>Write down the date and time</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="col-md-4">
-                    <div class="help-card">
-                        <h5><i class="bi bi-people text-primary me-2"></i> Who to Tell</h5>
-                        <ul class="mt-3">
-                            <li>Your parents or guardian</li>
-                            <li>Your teacher or school counselor</li>
-                            <li>Child protection police</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="col-md-4">
-                    <div class="help-card">
-                        <h5><i class="bi bi-exclamation-triangle text-warning me-2"></i> When to Ask for Help</h5>
-                        <ul class="mt-3">
-                            <li>If you receive scary messages</li>
-                            <li>If someone asks for personal information</li>
-                            <li>If you see inappropriate content</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Progress Section -->
-    <section id="progress" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">
-                <i class="bi bi-trophy text-warning"></i> My Achievements
-            </h2>
+            <h2 class="text-center mb-5">Our 3-Step Approach</h2>
             
             <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="progress-card">
-                        <h4>My Progress</h4>
-                        <div class="progress mt-3" style="height: 25px;">
-                            <div class="progress-bar" role="progressbar" style="width: 40%">40%</div>
+                <!-- Feature 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="bi bi-lightbulb"></i>
                         </div>
-                        <p class="mt-2">Complete 3 more games to level up!</p>
-                        
-                        <div class="mt-4">
-                            <div class="d-flex align-items-center mb-2">
-                                <i class="bi bi-check-circle text-success me-2"></i>
-                                <span>Games Completed: <strong>2/5</strong></span>
-                            </div>
-                            <div class="d-flex align-items-center mb-2">
-                                <i class="bi bi-star text-warning me-2"></i>
-                                <span>Badges Earned: <strong>1</strong></span>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <i class="bi bi-clock text-info me-2"></i>
-                                <span>Learning Time: <strong>25 min</strong></span>
-                            </div>
-                        </div>
+                        <h3>1. Awareness</h3>
+                        <p>Understand digital threats, why they happen, and how to spot them before they cause harm.</p>
                     </div>
                 </div>
                 
-                <div class="col-md-6 mb-4">
-                    <div class="badges-card">
-                        <h4>My Badges</h4>
-                        <div class="badges-container">
-                            <div class="badge-item earned">
-                                <i class="bi bi-shield-check fs-3"></i>
-                                <div class="mt-2">Safety Starter</div>
-                            </div>
-                            <div class="badge-item">
-                                <i class="bi bi-key fs-3"></i>
-                                <div class="mt-2">Password Master</div>
-                            </div>
-                            <div class="badge-item">
-                                <i class="bi bi-robot fs-3"></i>
-                                <div class="mt-2">Cyber Detective</div>
-                            </div>
-                            <div class="badge-item">
-                                <i class="bi bi-star fs-3"></i>
-                                <div class="mt-2">Digital Hero</div>
-                            </div>
+                <!-- Feature 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="bi bi-diagram-3"></i>
                         </div>
-                        
-                        
+                        <h3>2. Decision Making</h3>
+                        <p>Practice making the right choices in difficult situations through interactive scenarios.</p>
+                    </div>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="bi bi-tools"></i>
+                        </div>
+                        <h3>3. Problem Solving</h3>
+                        <p>Get step-by-step guides for what to do when problems actually happen.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+<!-- Modes section -->
+   <section id="modes" class="modes-section py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">
+            <i class="bi bi-laptop"></i> Choose Your Learning Mode
+        </h2>
+        <p class="text-center text-muted mb-5">Select the experience tailored for your needs</p>
+        
+        <div class="row justify-content-center g-4">
+            <!-- Junior Mode -->
+            <div class="col-lg-5 col-md-6">
+                <div class="mode-card mode-card-junior">
+                    <!-- Image  -->
+                    <div class="mode-image">
+                        <img src="./Assets/images/kid-using-tablet-with-digital-shield-icon-overlay_113954-8223.avif" 
+     alt="Online learning cartoon" class="img-fluid">
 
-    <!-- Parent Section -->
-    <section class="py-5">
+                        <div class="mode-badge">For Kids 8-15</div>
+                    </div>
+                    
+                    <!-- Content  -->
+                    <div class="mode-content">
+                        <h3 class="mode-title">Junior Mode</h3>
+                        <p class="mode-description">Fun and interactive digital safety lessons through games and stories.</p>
+                        
+                        <ul class="mode-features">
+                            <li><i class="bi bi-check-circle-fill"></i> Interactive games & stories</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Cartoon characters & animations</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Badges & certificates</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Parent dashboard</li>
+                        </ul>
+                        
+                        <a href="junior.html" class="btn btn-warning btn-lg w-100 mt-3">
+                            <i class="bi bi-rocket-takeoff"></i> Start Junior Adventure
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Adult Mode -->
+            <div class="col-lg-5 col-md-6">
+                <div class="mode-card mode-card-adult">
+                    <!-- Image  -->
+                    <div class="mode-image">
+                        <img src="./Assets/images/teenager-being-cyberbullied-smartphone_23-2150037596.jpg" 
+                             alt="Adult Learning" class="img-fluid">
+                        <div class="mode-badge">For Ages 16+</div>
+                    </div>
+                    
+                    <!-- Content  -->
+                    <div class="mode-content">
+                        <h3 class="mode-title">Adult Mode</h3>
+                        <p class="mode-description">Practical tools and simulations for real-world digital security.</p>
+                        
+                        <ul class="mode-features">
+                            <li><i class="bi bi-check-circle-fill"></i> Real-world simulations</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Security tools & analyzers</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Data privacy guides</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Family protection toolkit</li>
+                        </ul>
+                        
+                        <a href="adult.html" class="btn btn-primary btn-lg w-100 mt-3">
+                            <i class="bi bi-shield-check"></i> Start Professional Training
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Data Section -->
+    <section id="data" class="data-section py-5">
         <div class="container">
-            <div class="parent-card">
+            <h2 class="text-center mb-5">Global Digital Safety Data</h2>
+            <p class="text-center mb-4">Powered by World Bank Data</p>
+            
+            <div class="row">
+                <div class="col-md-3 text-center mb-4">
+                    <div class="data-stat">
+                        <h3 class="stat-number">43%</h3>
+                        <p class="stat-label">Arab youth face cyberbullying</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center mb-4">
+                    <div class="data-stat">
+                        <h3 class="stat-number">65%</h3>
+                        <p class="stat-label">Users reuse passwords</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center mb-4">
+                    <div class="data-stat">
+                        <h3 class="stat-number">30%</h3>
+                        <p class="stat-label">Schools teach digital safety</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center mb-4">
+                    <div class="data-stat">
+                        <h3 class="stat-number">$6 Trillion</h3>
+                        <p class="stat-label">Annual cybercrime cost by 2025</p>
+                    </div>
+                </div>
+            </div>
+            
+           
+        </div>
+    </section>
+
+    <!-- Crisis Center -->
+    <section id="crisis" class="crisis-section py-5">
+        <div class="container">
+            <div class="crisis-alert p-4">
                 <div class="row align-items-center">
                     <div class="col-md-8">
-                        <h3><i class="bi bi-people"></i> Parents' Corner</h3>
-                        <p>Track your child's progress and learn how to support their digital safety journey.</p>
-                        <ul class="list-unstyled">
-                            <li><i class="bi bi-check text-warning me-2"></i> Review safety games together</li>
-                            <li><i class="bi bi-check text-warning me-2"></i> Set healthy screen time limits</li>
-                            <li><i class="bi bi-check text-warning me-2"></i> Discuss real-life scenarios</li>
-                        </ul>
+                        <h3><i class="bi bi-megaphone"></i> Need Immediate Help?</h3>
+                        <p>If you're facing an online emergency right now, our Crisis Center provides step-by-step guidance.</p>
                     </div>
-                    <div class="col-md-4 text-center">
-                        <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#parentModal">
-                            <i class="bi bi-graph-up"></i> View Progress Report
-                        </button>
+                    <div class="col-md-4 text-end">
+                        <a href="crisis.html" class="btn btn-danger btn-lg">
+                            <i class="bi bi-ambulance"></i> Go to Crisis Center
+                        </a>
                     </div>
                 </div>
             </div>
@@ -484,17 +260,22 @@ Message: "Congratulations! You won an iPhone! Click here to claim: bit.ly/free-i
     </section>
 
     <!-- Footer -->
-    <footer class="junior-footer">
+    <footer class="footer py-4">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-8">
-                    <h4><i class="bi bi-emoji-smile"></i> SafeNet Junior</h4>
-                    <p>Making digital safety fun and educational for kids!</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4><i class="bi bi-shield-check"></i> SafeNet</h4>
+                    <p>Empowering digital citizens through education and practical tools.</p>
+                    <p>Using World Bank Data to drive awareness and solutions.</p>
                 </div>
-                <div class="col-md-4 text-center text-md-end">
-                    <a href="index.html" class="btn btn-outline-light">
-                        <i class="bi bi-arrow-left"></i> Back to Home
-                    </a>
+                <div class="col-md-6 text-end">
+                    <p>© 2024 SafeNet Project</p>
+                    <p>Made for the LEADER OF SOFTWARE Competition</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-linkedin"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -503,6 +284,7 @@ Message: "Congratulations! You won an iPhone! Click here to claim: bit.ly/free-i
     <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
-   <script  src="./js/junior.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
 </body>
 </html>

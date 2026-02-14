@@ -11,7 +11,6 @@
     background: linear-gradient(rgba(220, 53, 69, 0.1), rgba(220, 53, 69, 0.05)),
                 url('https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg');
     background-size: cover;
-    
     position: relative;
 }
 
@@ -272,6 +271,11 @@
     color: white;
 }
 
+
+.modal{
+    color: #333;
+}
+
 /* Aftercare Section */
 .aftercare-section {
     background:  rgba(0, 0, 0, 0.4);;
@@ -331,7 +335,7 @@
     
     .emergency-alert {
         padding: 25px;
-        margin: 0 15px;
+        margin: 15px;
     }
     
     .progress-steps::before {

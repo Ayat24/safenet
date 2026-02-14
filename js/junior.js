@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Avatar Selection
     const avatars = {
-        boy: "/Assets/images/boy.png",
-        girl: "/Assets/images/girl.png",
-        robot: "/Assets/images/robo.png"
+        boy: "Assets/images/boy.png",
+        girl: "Assets/images/girl.png",
+        robot: "Assets/images/robo.png"
     };
     
     // Add click events to avatar buttons

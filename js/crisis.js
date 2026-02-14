@@ -353,10 +353,8 @@ function loadStep(stepIndex) {
         </div>
     `;
     
-    // Update navigation buttons
     updateNavigationButtons();
     
-    // Update progress visualization
     updateProgressSteps();
 }
 
@@ -441,81 +439,4 @@ function resetGuide() {
     document.querySelector('.problem-selector').scrollIntoView({ behavior: 'smooth' });
 }
 
-function showCompletion() {
-    const stepContent = document.getElementById('stepContent');
-    stepContent.innerHTML = `
-        <div class="text-center py-5">
-            <i class="bi bi-check-circle text-success display-1"></i>
-            <h3 class="mt-4">Help Request Completed!</h3>
-            <p class="lead">You've completed all emergency steps.</p>
-            <div class="mt-4">
-                <p>If you still need assistance, contact emergency services:</p>
-                <button class="btn btn-danger btn-lg" onclick="alert('Emergency services contacted!')">
-                    <i class="bi bi-telephone"></i> Call Emergency: 112
-                </button>
-            </div>
-        </div>
-    `;
-    
-    // Hide navigation buttons
-    document.querySelector('.step-navigation').style.display = 'none';
-}
 
-function showNoSolution() {
-    const stepContent = document.getElementById('stepContent');
-    stepContent.innerHTML = `
-        <div class="text-center py-5">
-            <i class="bi bi-question-circle text-warning display-1"></i>
-            <h3 class="mt-4">Help Guide Coming Soon</h3>
-            <p class="lead">Detailed guide for this emergency is being prepared.</p>
-            <div class="alert alert-info mt-4">
-                <strong>For immediate help:</strong> Contact emergency services at 112
-            </div>
-        </div>
-    `;
-}
-
-// Helper functions
-function generateReport() {
-    alert('Incident report generated and ready for download!');
-    // In a real app, this would generate and download a PDF
-}
-
-function runSafetyCheck() {
-    alert('Running safety check... This would scan for security issues in a real application.');
-}
-
-// Add CSS for progress steps
-const style = document.createElement('style');
-style.textContent = `
-    .step {
-        position: relative;
-        z-index: 2;
-        transition: all 0.3s ease;
-    }
-    
-    .step.active {
-        background: #dc3545 !important;
-        color: white !important;
-        transform: scale(1.1);
-        box-shadow: 0 0 10px rgba(220, 53, 69, 0.5);
-    }
-    
-    .step.completed {
-        background: #28a745 !important;
-        color: white !important;
-    }
-    
-    .action-card {
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 15px;
-        border: 2px solid rgba(255, 255, 255, 0.2);
-        transition: all 0.3s;
-    }
-    
-    .action-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    }
-`;
-document.head.appendChild(style);
